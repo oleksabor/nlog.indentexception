@@ -6,7 +6,7 @@
 		<title>NLog indent exception layout renderer</title>
 		<authors>oleksa.borodie@gmail.com</authors>
 		<owners>oleksa.borodie</owners>
-		<!-- licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl -->
+		<licenseUrl>https://choosealicense.com/licenses/mit/</licenseUrl>
 		<projectUrl>https://github.com/oleksabor/nlog.indentexception</projectUrl>
 		<!-- iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl -->
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
