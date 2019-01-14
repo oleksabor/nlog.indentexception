@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>NLog.IndentException</id>
+		<version>$version$</version>
+		<title>NLog indent exception layout renderer</title>
+		<authors>oleksa.borodie@gmail.com</authors>
+		<owners>oleksa.borodie</owners>
+		<!-- licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl -->
+		<projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+		<!-- iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl -->
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>NLog logger indent exception layout renderer. Allows to indent exception stack in log file and to aviod exception stack surplus logging.
+Can be parameterized not to log stack trace for console window.</description>
+		<releaseNotes></releaseNotes>
+		<copyright>Copyright 2019</copyright>
+		<tags>NLog</tags>
+		<contentFiles>
+			<files include="*.cs.pp" />
+		</contentFiles>
+		<dependencies>
+			<dependency id="NLog" version="4.5.*" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="**/*.cs.pp" target="content/App_packages/NLogIndentException$version$" />
+	</files>
+</package>
