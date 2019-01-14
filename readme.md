@@ -9,9 +9,9 @@ src\NLog.config is a sample configuration that shows how layout can be parameter
 
 Below you can find IndentException class properties that can help you to adjust exception logging
 
-property name | description 
------|------
-Indent | what character(s) are placed before exception in the log (default is tab)
+| property name | description |
+|-----|------|
+|Indent | what character(s) are placed before exception in the log (default is tab)|
 StackTraceIndent | indent between each stack trace line (default is two tab characters)
 BeforeType | is written before exception type name (default [)
 AfterType | is written after exception type name (default ])
