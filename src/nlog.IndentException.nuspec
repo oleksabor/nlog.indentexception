@@ -7,7 +7,7 @@
 		<authors>oleksa.borodie@gmail.com</authors>
 		<owners>oleksa.borodie</owners>
 		<!-- licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl -->
-		<projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+		<projectUrl>https://github.com/oleksabor/nlog.indentexception</projectUrl>
 		<!-- iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl -->
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>NLog logger indent exception layout renderer. Allows to indent exception stack in log file and to aviod exception stack surplus logging.
