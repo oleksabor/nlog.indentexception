@@ -28,5 +28,5 @@ $files | ForEach-Object {
 New-Item -ItemType Directory -Force -Path bin
 
 'packing ' + $buid_number
-& nuget.exe pack src/nlog.indentexception.nuspec -Output bin -ExcludeEmptyDirectories -version $build_version -properties "Configuration=Release"
+& nuget.exe pack src/nlog.indentexception.nuspec -OutputDirectory bin -ExcludeEmptyDirectories -version $build_version -properties "Configuration=Release"
 
