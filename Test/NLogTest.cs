@@ -10,7 +10,7 @@ namespace YourNamespace.NLog.Extention.Test
 	{
 		static ILogger Log = LogManager.GetCurrentClassLogger();
 
-		static void TestLogIndent(string[] args)
+		static void Main(string[] args)
 		{
 			Log.Debug("starting");
 			try
