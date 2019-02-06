@@ -3,6 +3,8 @@ I've asked a question about [exception layout renderer at SO](https://stackoverf
 However seems that writing custom layout renderer is not so complex
 So here i will keep IndentExceptionLayoutRenderer.cs source code
 
+[![NuGet](https://img.shields.io/nuget/v/NLog.IndentException.svg?maxAge=259200)](https://www.nuget.org/packages/NLog.IndentException/)
+
 This renderer allows to show exception using readable format (from my point of view) in the log (file or console). Additionally it does not log full exception stack trace if it is logged second time (it happens if exception is rethrown like inner exception).
 
 src\NLog.config is a sample configuration that shows how layout can be parameterized for console and file logging
