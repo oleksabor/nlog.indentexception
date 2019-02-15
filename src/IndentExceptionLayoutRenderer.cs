@@ -69,11 +69,12 @@ namespace YourNamespace.NLog.Extention
 				if (LogStack)
 				{
 					var stackTraceWasLogged = _loggedErrors.Contains(e);
-					if (!stackTraceWasLogged)
+					var stackTrace = e.StackTrace;
+					if (!stackTraceWasLogged && stackTrace != null)
 					{
 						builder.AppendLine();
 						_loggedErrors.Enqueue(e);
-						builder.AppendFormat("{0}", e.StackTrace.Replace("   ", StackTraceIndent));
+						builder.AppendFormat("{0}", stackTrace.Replace("   ", StackTraceIndent));
 					}
 
 					if (_loggedErrors.Count > 33)
