@@ -13,7 +13,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>NLog logger indent exception layout renderer. Allows to indent exception stack in log file and to aviod exception stack surplus logging.
 Can be parameterized not to log stack trace for console window.</description>
-		<releaseNotes></releaseNotes>
+		<releaseNotes>.Net standard project format is supported</releaseNotes>
 		<copyright>Copyright 2019</copyright>
 		<tags>NLog</tags>
 		<contentFiles>
