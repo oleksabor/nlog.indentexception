@@ -8,6 +8,7 @@
 		<owners>oleksa.borodie</owners>
 		<license type="file">license.txt</license>
 		<projectUrl>https://github.com/oleksabor/nlog.indentexception</projectUrl>
+		<repository type="git" url="https://github.com/oleksabor/nlog.indentexception" />
 		<!-- iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl -->
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>NLog logger indent exception layout renderer. Allows to indent exception stack in log file and to aviod exception stack surplus logging.
@@ -23,7 +24,8 @@ Can be parameterized not to log stack trace for console window.</description>
 		</dependencies>
 	</metadata>
 	<files>
-		<file src="**/*.cs.pp" target="content/App_packages/NLogIndentException$version$" />
+		<file src="**/*.cs.pp" target="content/App_packages/NLogIndentException$version$" /> <!-- for legacy project format -->
 		<file src="..\license.txt" target="license.txt" />
+		<file src="**/*.cs.pp" target="contentFiles\cs\any" /> <!-- for SDK project format -->
 	</files>
 </package>
