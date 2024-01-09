@@ -20,6 +20,28 @@ AfterType | is written after exception type name (default ])
 Separator | separator between exception type and message
 LogStack | to log stack trace or not (for console logger e.g.)
 
+#### how it works
+The package does not contain any assemlby just a source file.
+
+This is `IndentExceptionLayoutRenderer.cs` text file.
+It has `IndentExceptionLayoutRenderer` class defined within `YourNamespace.NLog.Extention` namespace. 
+
+All `.cs` files are copied to text template `.pp` when package is released and nupkg file is created.
+Namespace `YourNamespace` is changed to the current project default namespace value.
+
+Then `.pp` files are injected into every project that references `IndentException` package.
+
+#### how to use
+`Sample` folder contains sample project how package may be consumed.
+
+* Add package to a project
+* create/adjust `nuget.config` file and add `extensions` element referencing your project assembly name
+```
+	<extensions>
+		<add assembly="YOUR_PROJECT_ASSEMBLY_NAME"/>
+	</extensions>
+```
+Initialize NLog as usually and get exception formatting extention working. 
 
 #### console log sample
 Here is console output for layout like `layout="${level} ${message}${onexception:${newline}${IndentException:LogStack=false:separator=&#x9;:beforeType=:aftertype=}}"`
